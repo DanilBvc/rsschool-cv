@@ -44,7 +44,7 @@ n < 5 = 100<br>
 n >= 5 and n < 10 =    95<br>
 n >= 10    = 90<br>
 
- java script 
+``` java script 
 function saleHotdogs(n){
   if(n < 5 && n > 0 ) {
    return n *= 100;
@@ -54,3 +54,4 @@ function saleHotdogs(n){
     return n *= 90;
   }
 }
+```
