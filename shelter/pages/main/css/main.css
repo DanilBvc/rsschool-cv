@@ -1,0 +1,192 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul li{
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  min-width:320px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+@font-face {
+  font-family: 'Georgia';
+  src: url(/shelter/pages/main/css/fonts/georgia/georgia-regular.ttf) format('ttf');
+  font-weight: 400;
+}
+.header {
+  background: url(../img/start-screen-gradient-background.png) no-repeat center;
+  width: 100%;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+.header__up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.header__logo {
+font-size: 13px;
+letter-spacing: 0.1em;
+line-height: 15px;
+color: #fff;
+}
+h1 {
+  padding-bottom: 10px;
+}
+.logo__up {
+  color: #F1CDB3;
+  letter-spacing: 0.06em;
+  font-size: 32px;
+  font-family: 'Georgia', sans-serif;
+  line-height: 110%;
+}
+.header__nav-bar {
+}
+.nav-bar__item {
+  color: #CDCDCD;
+  line-height: 24px;
+}
+.nav-bar__item:hover {
+  color: #FAFAFA;
+  border-bottom: 1px solid #F1CDB3;
+}
+.li__item {
+  margin-right: 35px;
+}
+.li__item:last-child {
+  margin-right: 0px;
+}
+.nav-bar__items {
+  display: flex;
+}
+.header__down {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__down-left {
+  padding-right: 42px;
+}
+.header__title {
+  line-height: 130%;
+  color: #fff;
+  font-size: 44px;
+  font-family: 'Georgia', sans-serif;
+}
+.header__content {
+  color: #CDCDCD;
+  line-height: 160%;
+  padding: 42px 0px;
+}
+.header__button-link {
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  padding: 15px 45px;
+  font-family: 'Georgia', sans-serif;
+  color: #292929;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.header__button-link:hover {
+  background: #FDDCC4;
+}
+.header__down-right {
+  min-width: 728px;
+}
