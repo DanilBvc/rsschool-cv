@@ -159,10 +159,13 @@ h1 {
 .first {
   border-bottom: 3px solid #F1CDB3;
 }
-
+.first:hover {
+  color: #CDCDCD;
+}
 .li__item {
   margin-right: 35px;
 }
+
 .li__item:last-child {
   margin-right: 0px;
 }
@@ -338,11 +341,12 @@ line-height: 18px;
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
+  
 }
 .footer__left {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .footer__left-title {
   color: #fff;
@@ -375,7 +379,7 @@ letter-spacing: 0.06em;
 .footer__center {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .footer__center-location {
   display: flex;
@@ -391,6 +395,7 @@ color: #F1CDB3;
 }
 .footer__right {
   min-width: 300px;
+  padding-top: 40px;
 }
 /* slider */ 
 .our-friends {
@@ -404,7 +409,7 @@ color: #F1CDB3;
 
 .our-friends__button {
   text-align: center;
-  padding: 60px 0px 100px 0px;
+  padding: 75px 0px 115px 0px;
 }
 .our-friends__button-custom {
   font-size: 17px;
@@ -466,7 +471,7 @@ border-radius: 100px;
   font-family: 'Georgia';
   font-size: 20px;
 line-height: 23px;
-padding: 30px 0px;
+padding: 30px 0px 0px 0px;
 }
 .slider__button {
   padding: 15px 45px;
@@ -483,5 +488,6 @@ padding: 30px 0px;
   transition: 0.5s ease-out;
 }
 .slider__button-wrapper {
-  padding-bottom: 45px;
+  padding: 45px 0px;
+
 }
