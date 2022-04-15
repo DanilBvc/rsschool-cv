@@ -27,28 +27,8 @@ greyWrapper.addEventListener('click', function() {
     burgerTransformation();
 })
 /* slider */
-let rightArrow = document.querySelector('.arrow-right');
-let leftArrow = document.querySelector('.arrow-left');
-console.log(rightArrow);
-let index = 0;
-rightArrow.addEventListener('click', function() {
-    index += 1;
-    changeSlider();
-    console.log('+');
-});
-leftArrow.addEventListener('click', function() {
-  index--;
-  changeSlider();
-  console.log('-');
- })
-let slides = document.getElementsByClassName('slider__item');
-function changeSlider() {
-for(let i = 0; i < slides.length; i++) {
-    if(index > 3) {
-        index = 1;
-    }else if(index <= 0) {
-        index = 1;
-    }
-}
-slides[index - 1].style.display = "flex";
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = new ChiefSlider('.slider__wrapper', {
+      loop: true
+    });
+  });
