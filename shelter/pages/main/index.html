@@ -11,11 +11,56 @@
     <link rel="stylesheet" href="css/fonts/arial/arial-regular.ttf">
 </head>
 <body>
-    <main>
+    <main class="main">
         <section class="header">
+            <div class="burger">
+                <span class="burger-line"></span> 
+             </div>
             <div class="container">
                 <div class="header__up">
                     <div class="header__logo">
+                        <a href="index.html">
+                            <h1 class="logo__up">
+                                Cozy House
+                            </h1>
+                            <p class="logo__bottom">
+                                Shelter for pets in Boston
+                            </p>
+                        </a>
+                    </div>
+                    <div class="header__nav-bar">
+                        <ul class="nav-bar__items">
+                            <li class="li__item"><a href="index.html" class="nav-bar__item first">About the shelter</a></li>
+                            <li class="li__item"><a href="../pets/Our Pets.html" class="nav-bar__item">Our pets</a></li>
+                            <li class="li__item close-burger"><a href="#help" class="nav-bar__item">Help the shelter</a></li>
+                            <li class="li__item close-burger"><a href="#footer" class="nav-bar__item reset">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__down">
+                    <div class="header__down-left">
+                        <h2 class="header__title">
+                            Not only people<br> need a house
+                        </h2>
+                        <div class="header__content">
+                            We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!
+                        </div>
+                        <div class="header__button">
+                            <a href="#our-friends" class="header__button-link">
+                                Make a friend
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__down-right">
+                        <img src="img/main__dog.png" class="dog-picture" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header hidden header__copy">
+            <div class="container">
+                <div class="header__up">
+                    <div class="header__logo header__logo-copy">
                         <a href="index.html">
                             <h1 class="logo__up">
                                 Cozy House
@@ -49,10 +94,13 @@
                         </div>
                     </div>
                     <div class="header__down-right">
-                        <img src="img/main__dog.png" alt="">
+                        <img src="img/main__dog.png" class="dog-picture" alt="">
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="wrapper-grey hidden">
+
         </section>
         <section class="about">
             <div class="container">
@@ -62,7 +110,7 @@
                     </div>
                     <div class="about__right">
                         <h3 class="about__title">
-                            About the shelter<br> “Cozy House”
+                            About the shelter “Cozy House”
                         </h3>
                         <div class="about__first-text text">
                             Currently we have 121 dogs and 342 cats on our hands and<br>
@@ -85,15 +133,17 @@
         <section class="our-friends" id="our-friends">
             <div class="container">
                 <h3 class="our-friends__title">
-                    Our friends who<br>
+                    Our friends who
                     are looking for a house
                 </h3>
                 <div class="our-friends__slider">
-                    <div class="arrow-right">
-                        <img src="img/Arrow-left.png" alt="">
-                    </div>
-                    <div class="arrow-left">
-                        <img src="img/Arrow-left.png" alt="">
+                    <div class="arrow__wrapper">
+                        <div class="arrow-right">
+                            <img src="img/Arrow-left.png" alt="">
+                        </div>
+                        <div class="arrow-left">
+                            <img src="img/Arrow-left.png" alt="">
+                        </div>
                     </div>
                     <div class="slider__item">
                         <img src="img/slider/slider__elem-cat.png" alt="">
@@ -129,9 +179,9 @@
             </div>
         </section>
         <section class="help" id="help">
-            <div class="container">
+            <div class="container help__title-container">
                 <h3 class="help__title">
-                    How you can help<br>
+                    How you can help
                     our shelter
                 </h3>
                 <div class="help__grid-items">
@@ -243,7 +293,7 @@
         <div class="footer__container" id="footer">
             <div class="container">
                 <div class="footer__wrapper">
-                    <div class="footer__left">
+                    <div class="footer__left footer__item">
                         <h3 class="footer__left-title">
                             For questions<br> and suggestions
                         </h3>
@@ -256,7 +306,7 @@
                             <a href="tel:+136745677554" class="footer__phone-number">+13 674 567 75 54</a>
                         </div>
                     </div>
-                    <div class="footer__center">
+                    <div class="footer__center footer__item">
                         <h3 class="footer__left-title">
                             We are waiting<br> for your visit
                         </h3>
@@ -269,7 +319,7 @@
                             <a href="https://www.google.com.ua/maps/place/36179+%D0%91%D0%B5%D0%B1%D1%80%D0%B0,+%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F/@50.9766689,9.7423134,12z/data=!3m1!4b1!4m5!3m4!1s0x47a4aa35ad3b3069:0x822942ff510ea21d!8m2!3d50.9688842!4d9.7973417?hl=ru" class="footer__location">18 South Park, London </a>
                         </div>
                     </div>
-                    <div class="footer__right">
+                    <div class="footer__right footer__item">
                         <img src="img/footer/footer__dog.png" alt="">
                     </div>
                 </div>
