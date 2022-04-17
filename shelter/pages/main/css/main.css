@@ -151,6 +151,7 @@ h1 {
   color: #CDCDCD;
   line-height: 24px;
   padding-bottom: 2px;
+  font-size: 15px;
 }
 .nav-bar__item:hover {
   color: #FAFAFA;
@@ -249,16 +250,16 @@ h3 {
 } 
 .about__first-text {
   padding-bottom: 25px;
+  max-width: 430px;
 }
 .about__second-text {
+  max-width: 430px;
 }
 
 /* help */
 .help {
   padding: 80px 0px 100px 0px;
   text-align: center;
-}
-.container {
 }
 .help__title {
   padding-bottom: 60px;
@@ -317,7 +318,7 @@ margin-bottom: 20px;
   background-color: #F1CDB3;
   border-radius: 9px;
   padding: 10px 15px;
-
+max-width: 352px;
 }
 .credit-card {
   letter-spacing: 0.06em;
@@ -330,6 +331,7 @@ margin-bottom: 20px;
   font-style: italic;
   color: #B2B2B2;
   margin-top: 20px;
+  max-width: 380px;
   font-size: 12px;
 line-height: 18px;
 }
@@ -406,6 +408,8 @@ color: #F1CDB3;
 .our-friends__title {
   text-align: center;
   padding: 80px 0px 60px 0px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .our-friends__button {
@@ -445,12 +449,12 @@ border-radius: 100px;
   border: 2px solid #F1CDB3;
   padding: 23px 19px;
   cursor: pointer;
-  top: 50%;
+  top: 43%;
 }
 .arrow-left {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 43%;
   border-radius: 100px;
   border: 2px solid #F1CDB3;
   padding: 23px 19px;
@@ -502,6 +506,7 @@ padding: 30px 0px 0px 0px;
   .header__down-left {
     max-width: 460px;
     padding-right: 0px;
+    margin-bottom: 115px;
   }
  .header__button {
    text-align: center;
@@ -509,7 +514,9 @@ padding: 30px 0px 0px 0px;
  .header__down-right {
    min-width: 100%;
  }
-
+ .header__nav-bar {
+   margin-right: 0;
+ }
  .our-friends .container {
    padding: 0px 30px;
  }
@@ -524,8 +531,11 @@ padding: 30px 0px 0px 0px;
  }
 
  .dog-picture {
-  max-width: 593px;
+  max-width: 569px;
     float: right;
+}
+.header .container {
+  padding: 0px 30px;
 }
 }
 @media(max-width:1000px) {
@@ -598,7 +608,7 @@ padding: 30px 0px 0px 0px;
 }
 .burger-line::before {
   content: "";
-  top: -15px;
+  top: -10px;
   transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   width: 30px;
   position: absolute;
@@ -610,7 +620,7 @@ padding: 30px 0px 0px 0px;
 }
 .burger-line::after {
   content: "";
-  bottom: -15px;
+  bottom: -10px;
   transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 width: 30px;
 position: absolute;
@@ -633,6 +643,12 @@ z-index: 10;
   }
   .burger {
     display: block;
+    position: absolute;
+    right: 33px;
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
   }
   .nav-bar__item {
     font-size: 32px;
@@ -659,7 +675,7 @@ z-index: 10;
   display: flex;
 }
 .header__black-bg {
-  background: black;
+  background: #292929;
     height: 100%;
     width: 320px;
     right: 0;
@@ -682,9 +698,7 @@ z-index: 10;
 }
 
 @media(max-width:450px) {
-  .nav-bar__items {
-    right: 5%;
-  }
+ 
   .arrow__wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -729,8 +743,9 @@ z-index: 10;
  
 }
 @media(max-width:320px) {
-  .container {
-    padding: 0px 25px;
+ .header .container {
+    padding: 0px 30px 0px 10px;
+    
   }
   .header__title {
     line-height: 33px;
@@ -757,10 +772,7 @@ z-index: 10;
     line-height: 32.5px;
     font-size: 25px;
   }
-  .credit-card {
-    line-height: 16.5px;
-    font-size: 15px;
-  }
+ 
 
   .our-friends__slider {
     flex-direction: column;
@@ -778,16 +790,15 @@ z-index: 10;
   .help__grid-items {
     justify-content: normal;
   }
-  .addition__title {
-    font-size: 25px;
-    line-height: 32.5px;
-    text-align: center;
+ 
+  .nav-bar__item {
+    font-size: 32px;
+    line-height: 51.2px;
   }
-  .addition__bank-name {
-    text-align: center;
-    font-size: 15px ;
-    line-height: 24px;
+  .header__up {
+    padding-top: 19px;
   }
+  
 }
 @media(max-width:750px) {
   .slider__item:nth-last-child(-n+2) {
@@ -802,3 +813,122 @@ z-index: 10;
 .our-friends__slider {
   position: relative;
 }
+@media(max-width:768px) {
+  .addition__left {
+    margin-right: 0;
+  }
+  .addition__right {
+    margin-right: 30px;
+  }
+}
+@media(max-width:376px) {
+  .header .burger__container {
+    padding: 0px 30px 0px 10px;
+  }
+}
+@media(max-width:320px) {
+  .header .burger__container {
+    padding: 0px 10px 0px 10px;
+}
+.header__content {
+  color: #CDCDCD;
+  line-height: 160%;
+  padding: 42px 0px 34px 0px;
+}
+.dog-picture {
+  max-width: 270px;
+}
+.about {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.about .container {
+  padding: 0px 25px;
+}
+.about__left {
+  margin-right: 0px;
+  margin-top: 42px;
+}
+.our-friends__title {
+  text-align: center;
+  padding: 42px 0px 42px 0px;
+}
+.slider__item-custom {
+  min-width: 270px;
+}
+.our-friends .container {
+  padding: 0px 25px;
+}
+.our-friends__button {
+  text-align: center;
+  padding: 55px 0px 55px 0px;
+}
+.help__title {
+  padding-bottom: 42px;
+}
+.help {
+  padding: 42px 0px 42px 0px;
+  text-align: center;
+}
+
+.footer__container .container {
+  padding: 0px 10px;
+}
+.footer__location {
+  font-size: 20px;
+  font-family: 'Georgia';
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  margin-left: 20px;
+  color: #F1CDB3;
+}
+.footer__item:last-child {
+  width: 260px;
+  justify-content: center;
+  padding-top: 40px;
+}
+.help__item {
+  padding-bottom: 10px;
+}
+.addition__img-custom {
+  max-width: 260px;
+}
+.about__left-img {
+  max-width: 260px;
+}
+}
+
+@media(max-width:462px) {
+  .addition {
+    padding: 42px 0px 42px 0px;
+    background-color: #F6F6F6;
+  }
+  .addition__right {
+     margin-right: 0px; 
+  }
+  .addition .container {
+    padding: 0px 19px;
+  }
+  .addition__bank-name {
+    letter-spacing: normal;
+  }
+  .addition__left {
+    min-width: auto;
+    margin-top: 42px;
+  }
+  .addition__title {
+    font-size: 25px;
+    line-height: 32.5px;
+    text-align: center;
+  }
+  .addition__bank-name {
+    text-align: center;
+    font-size: 15px ;
+    line-height: 24px;
+  }
+  .credit-card {
+    line-height: 16.5px;
+    font-size: 15px;
+  }
+}
+
