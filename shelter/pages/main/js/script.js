@@ -1,8 +1,11 @@
 let burger = document.querySelector('.burger');
 let greyWrapper = document.querySelector(".wrapper-grey");
+let container = document.querySelector('.header .container');
+
 let burgerTransformation = function () {
     document.querySelector('.burger-line').classList.toggle('active-burger');
     document.querySelector('.nav-bar__items').classList.toggle('visible');
+    container.style.padding = '0px 30px 0px 10px;'; 
     let body = document.querySelector('body');
     if(body.style.overflow === 'hidden') {
         body.style.overflow = "visible";
@@ -27,8 +30,3 @@ greyWrapper.addEventListener('click', function() {
     burgerTransformation();
 })
 /* slider */
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = new ChiefSlider('.slider__wrapper', {
-      loop: true
-    });
-  });

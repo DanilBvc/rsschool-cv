@@ -235,6 +235,36 @@ padding: 14px 13px 15px 12px;
   .our-friends__title {
     padding: 80px 0px 30px 0px;
   }
+  .pets__buttons {
+    padding: 40px 0px 76px 0px;
+  }
+  .pets__our-friends {
+    padding-top: 120px;
+  }
+  .header__pets .burger .burger-line {
+    background: #000000;
+  }
+  .header__pets .burger .burger-line::after {
+    background: #000000;
+  }
+  .header__pets .burger .burger-line::before {
+    background: #000000;
+  }
+  .header__pets .burger  {
+    top: 61px;
+  }
+  .pets__our-friends .container {
+    padding: 0px 10px;
+  }
+
+.footer__item:last-child {
+    width: 260px;
+    justify-content: center;
+    padding-top: 40px;
+}
+.pets__buttons {
+  padding: 40px 0px 42px 0px;
+}
 }
 @media(max-width:450px) {
   .pets__gallery {
